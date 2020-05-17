@@ -1,4 +1,5 @@
 ﻿using Asp.NetWebAPI.Areas.HelpPage.Models;
+using Asp.NetWebAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace Asp.NetWebAPI.Areas.HelpPage.Controllers
+namespace Asp.NetWebAPI.Controllers
 {
     public class PersonelController : ApiController
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Asp.NetWebAPI.Areas.HelpPage.Controllers
+namespace Asp.NetWebAPI.Controllers
 {
     public class PersonellerController : Controller
     {
