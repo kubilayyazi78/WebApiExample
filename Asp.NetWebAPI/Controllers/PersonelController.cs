@@ -37,5 +37,14 @@ namespace Asp.NetWebAPI.Controllers
         {
             return listPersoneller;
         }
+
+        public IHttpActionResult GetPersonel(int id)
+        {
+            var arananPersonel = (from p in listPersoneller
+                                  where p.Id == id
+                                  select p).FirstOrDefault();
+
+            return Ok(arananPersonel);
+        }
     }
 }

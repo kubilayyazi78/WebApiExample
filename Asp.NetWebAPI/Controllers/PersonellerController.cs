@@ -18,5 +18,10 @@ namespace Asp.NetWebAPI.Controllers
         {
             return View();
         }
+
+        public ActionResult PersonelGetir()
+        {
+            return View();
+        }
     }
 }
