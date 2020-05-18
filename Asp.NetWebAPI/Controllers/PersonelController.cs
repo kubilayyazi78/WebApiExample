@@ -46,5 +46,17 @@ namespace Asp.NetWebAPI.Controllers
 
             return Ok(arananPersonel);
         }
+
+        public IHttpActionResult PostPersonel(Personel per)
+        {
+            if (listPersoneller.Where(p=>p.Id==per.Id).Count()==0)
+            {
+                return Ok();
+            }
+            else
+            {
+                return Conflict();
+            }
+        }
     }
 }

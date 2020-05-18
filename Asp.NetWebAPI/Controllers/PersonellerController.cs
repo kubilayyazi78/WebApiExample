@@ -23,5 +23,10 @@ namespace Asp.NetWebAPI.Controllers
         {
             return View();
         }
+
+        public ActionResult YeniPersonel()
+        {
+            return View();
+        }
     }
 }
