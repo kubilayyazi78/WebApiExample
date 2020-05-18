@@ -8,11 +8,12 @@
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 <script>
 
-    $(document).ready(function () {
+    $(document)
+        .ready(function () {
         $("#kaydet").click(function () {
-            var perId = $("#id").val();
-            var perAd = $("#ad").val();
-            var perSoyad = $("#soyad").val();
+            var perId = $("#Id").val();
+            var perAd = $("#Ad").val();
+            var perSoyad = $("#Soyad").val();
 
             $.post("../api/personel", { Id: perId, Ad: perAd, Soyad: perSoyad }, function (sonuc) {
                 alert("Kayıt Eklendi");
